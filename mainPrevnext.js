@@ -28,7 +28,7 @@ function showSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
 }
 
 function tampilSlides(n) {
@@ -49,7 +49,7 @@ function tampilSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex].style.display = "block";
+    slides[slideIndex-1].style.display = "block";
 }
 
 function inputNominal(metode) {
