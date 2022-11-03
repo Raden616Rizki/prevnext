@@ -25,6 +25,9 @@ function showSlides(n) {
     } else if (n < 0) {
         slideIndex = slides.length;
     }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
     slides[slideIndex].style.display = "block";
 }
 
@@ -42,6 +45,9 @@ function tampilSlides(n) {
         document.getElementById('awal').style.display = 'block';
     } else if (n < 0) {
         slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
     }
     slides[slideIndex].style.display = "block";
 }
